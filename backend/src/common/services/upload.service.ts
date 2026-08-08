@@ -82,7 +82,7 @@ export class UploadService {
           oldFileToDelete &&
           this.getFileName(oldFileToDelete) !==
             this.getFileName(`${type}/${file.originalname}`)
-          // document can have meaningful names, so to avoid adding Date.now() to it just check if same name dont delete
+          // document can have meaningful names, so to avoid adding Date.now() to it, just check if same name then dont delete
           // because that may lead to delete the file just created as it has the same name
         ) {
           await this.safeDelete(oldFileToDelete);

@@ -8,7 +8,7 @@
 
 # Logs
 
-*.log
+*.log*
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
@@ -57,3 +57,7 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Keep application logs directory
+!src/features/logs/
+!src/features/logs/**
