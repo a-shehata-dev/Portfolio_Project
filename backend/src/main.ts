@@ -46,7 +46,10 @@ async function bootstrap() {
   );
 
   //! CORS
-  app.enableCors({ origin: process.env.CORS_ORIGIN, credentials: true });
+  app.enableCors({
+    origin: [process.env.CORS_ORIGIN, process.env.WWW_CORS_ORIGIN],
+    credentials: true,
+  });
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
