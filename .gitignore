@@ -15,7 +15,7 @@ lerna-debug.log*
 **/coverage
 **/.nyc_output
 **/sessions
-**/public
+# **/public
 
 # Environment files
 **/.env
