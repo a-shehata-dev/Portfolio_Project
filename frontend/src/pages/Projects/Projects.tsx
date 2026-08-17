@@ -19,7 +19,7 @@ export default function Projects() {
         data: res.data.data.data,
         total: res.data.data.totalResults,
       })),
-    DEFAULT_PAGE_SIZE
+    DEFAULT_PAGE_SIZE,
   );
 
   return (
